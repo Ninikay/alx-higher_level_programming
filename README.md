@@ -4,6 +4,8 @@
 
 High level programming projects based in Python language
 
+This repository stores solutions to high-level programming projects, most projects are written in Python programming language, but some projects contain something in C and SQL programming language.
+
 # Projects inside this repository
 
 1. 0x00-python-hello-world
