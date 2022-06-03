@@ -13,3 +13,9 @@ Introduction to python programming language
 
 2. 0x01-python-if_else_loops_functions
 Implementation of If, Else and loops using python
+
+3. 0x02-python-import_modules
+Implementation of scripts using module import
+
+4. 0x03-python-data_structures
+Understanding and implement data structures in Python
