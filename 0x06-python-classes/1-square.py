@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-class Square:
-    """ Square that defines a square 7object
-    Private instance attribute: size.
-    """
+"""Square Class"""
 
+
+class Square:
     def __init__(self, size):
-        """Initializes the data that stores the size of the square ."""
+        """__init__
+        The __init__ method initializes the size value of the square.
+        Attributes: size (int): The size of the square.
+        """
         self.__size = size
