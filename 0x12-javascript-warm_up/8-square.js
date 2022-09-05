@@ -1,13 +1,10 @@
 #!/usr/bin/node
-if (isNaN(parseInt(process.argv[2]))) {
-  console.log('Missing size');
-} else {
-  const size = parseInt(process.argv[2]);
-  for (let i = 0; i < size; i++) {
-    let square = ' ';
-    for (let j = 0; j < size; j++) {
-      square += 'X';
-    }
-    console.log(square);
-  }
+const size = Math.trunc(process.argv[2]);
+
+if (isNaN(size)) console.log('Missing size');
+
+for (let i = 0; i < size; i++) {
+  const temp = [];
+  for (let j = 0; j < size; j++) temp.push('X');
+  console.log(temp.join(''));
 }
