@@ -1,9 +1,20 @@
 #!/usr/bin/node
-const num = parseInt(process.argv[2]);
 
-function factorial (num) {
-  if (num < 0) return;
-  if (isNaN(num) || num === 0) return 1;
-  return num * factorial(num - 1);
+function second (myArray) {
+  if (myArray.length === 2 || myArray.length === 3) { return (0); }
+
+  let max = myArray[2];
+  let secondMax = myArray[3];
+
+  for (let i = 2; i < myArray.length; i++) {
+    if (myArray[i] > max) {
+      secondMax = max;
+      max = myArray[i];
+    } else if (myArray[i] > secondMax && myArray[i] < max) {
+      secondMax = myArray[i];
+    }
+  }
+  return (secondMax);
 }
-console.log(factorial(num));
+
+console.log(second(process.argv));
